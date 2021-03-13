@@ -1,16 +1,39 @@
 本字体为`PT Mono`增添连字(Ligature)特性
 
+## 安装
+
+1. [点击下载](https://codeload.github.com/liangjingkanji/PTCode/zip/refs/heads/master)
+2. 网页字体引用
+
+```css
+@font-face{
+    font-family: 'PT Code';
+    src: local('PT Code'),
+         url('https://raw.githubusercontent.com/liangjingkanji/PTCode/master/font/PTCode-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    -webkit-font-feature-settings: "liga" on, "calt" on;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: 'PT Code' !important;
+}
+```
+
+
+
 ## 预览
 
 代码渲染
 
-<img src="https://i.imgur.com/6GrrD4V.png" alt="image-20210312124457744" style="zoom:50%;" /> 
+<img src="https://i.imgur.com/scaWsx5.png" width="600px" /> 
 
 
 
 连字特性
 
-<img src="https://i.imgur.com/iNGDvlD.png" alt="image-20210312124533252" style="zoom:50%;" /> 
+<img src="https://i.imgur.com/o4thUkz.png" width="450px" /> 
 
 
 
